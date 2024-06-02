@@ -10,10 +10,11 @@ class VinylRecord extends MusicMedia
     private int numberOfTracks;
     private int size;
     private int weight;
+
+    public static final int MINIMUM_NUMBER_OF_TRACKS = 0;
     public static final int SIZE_TWELVE_INCH = 12;
     public static final int SIZE_TEN_INCH = 10;
     public static final int SIZE_SEVEN_INCH = 7;
-
     private static final List<Integer> VALID_SIZES = Arrays.asList(12, 10, 7);
     private static final List<Integer> VALID_WEIGHTS_12 = Arrays.asList(140, 180, 200);
     private static final List<Integer> VALID_WEIGHTS_10 = Arrays.asList(100);
@@ -147,7 +148,7 @@ class VinylRecord extends MusicMedia
      */
     private static boolean isValidNumberOfTracks(final int tracks)
     {
-        return tracks > 0;
+        return tracks > MINIMUM_NUMBER_OF_TRACKS;
     }
 
     /**

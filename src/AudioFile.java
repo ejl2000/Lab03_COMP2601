@@ -8,6 +8,8 @@ class AudioFile extends MusicMedia implements FileManager
     private String fileName;
     private int fileSize;
 
+    public static final int MINIMUM_FILE_SIZE = 0;
+
     /**
      * Constructor to initialize title, artist, file name, and file size.
      *
@@ -142,6 +144,6 @@ class AudioFile extends MusicMedia implements FileManager
      */
     private static boolean isValidFileSize(final int fileSize)
     {
-        return fileSize > 0;
+        return fileSize > MINIMUM_FILE_SIZE;
     }
 }
