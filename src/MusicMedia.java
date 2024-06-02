@@ -7,8 +7,8 @@ import java.util.*;
  */
 abstract class MusicMedia
 {
-    private final String title;
-    private final String artist;
+    private String title;
+    private String artist;
 
     /**
      * Constructor to initialize title and artist.

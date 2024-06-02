@@ -6,8 +6,8 @@
  */
 class CompactDisc extends MusicMedia
 {
-    private final int numberOfTracks;
-    private static final int MINIMUM_NUMBER_OF_TRACKS;
+    private int numberOfTracks;
+    private static final int MINIMUM_NUMBER_OF_TRACKS = 0;
     public static final String READING_METHOD;
 
     static

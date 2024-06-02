@@ -5,8 +5,8 @@
  */
 class AudioFile extends MusicMedia implements FileManager
 {
-    private final String fileName;
-    private final int fileSize;
+    private String fileName;
+    private int fileSize;
 
     /**
      * Constructor to initialize title, artist, file name, and file size.

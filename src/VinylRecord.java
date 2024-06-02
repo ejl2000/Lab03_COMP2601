@@ -1,3 +1,5 @@
+import java.util.*;
+
 /**
  * Class representing a vinyl record.
  *
@@ -5,9 +7,9 @@
  */
 class VinylRecord extends MusicMedia
 {
-    private final int numberOfTracks;
-    private final int size;
-    private final int weight;
+    private int numberOfTracks;
+    private int size;
+    private int weight;
     public static final int SIZE_TWELVE_INCH = 12;
     public static final int SIZE_TEN_INCH = 10;
     public static final int SIZE_SEVEN_INCH = 7;
